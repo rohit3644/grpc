@@ -16,9 +16,9 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
     # calculator.square_root is exposed here
     # the request and response are of the data type
     # calculator_pb2.Numberpython server.py
-    def SquareRoot(self, request, context):
-        response = calculator_pb2.Number()
-        response.value = calculator.square_root(request.value)
+    def Sum(self, request, context):
+        response = calculator_pb2.Response()
+        response.result = calculator.sum(request.num1,request.num2)
         return response
 
 

@@ -1,5 +1,3 @@
-import math
-
-def square_root(x):
-  y = math.sqrt(x)
-  return y
+def sum(x1,x2):
+  #y = math.sqrt(x)
+  return x1+x2

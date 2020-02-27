@@ -1,9 +1,14 @@
 syntax = "proto3";
 
-message Number {
-    float value = 1;
+message Request {
+    int32 num1 = 1;
+    int32 num2 = 2;
+}
+
+message Response{
+    int32 result = 1;
 }
 
 service Calculator {
-    rpc SquareRoot(Number) returns (Number) {}
+    rpc Sum(Request) returns (Response) {}
 }
