@@ -16,7 +16,7 @@ while True:
     # make the call
         response = stub.Sum(numbers)
 
-        print 'Result:',response.result
+        # print 'Result:',response.result
     except KeyboardInterrupt:
         print("KeyboardInterrupt")
         channel.unsubscribe(close)

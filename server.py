@@ -17,6 +17,7 @@ class CalculatorServicer(calculator_pb2_grpc.CalculatorServicer):
     def Sum(self, request, context):
         response = calculator_pb2.Response()
         response.result = calculator.sum(request.num1,request.num2)
+        print 'Result:',response.result
         return response
 
 
